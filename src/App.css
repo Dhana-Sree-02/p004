@@ -1,0 +1,110 @@
+.app{
+  height: 100%;
+  display: grid;
+  grid-template-rows: 50px auto 30px;
+}
+.app .header{
+  display: flex;
+  align-items: center;
+  height:90px;
+  font-size: 20pt;
+  font-weight: bold;
+}
+.app .header img{
+  height: 70px;
+  margin: 0 10px;
+}
+.app .footer{
+  font-size: 15pt;
+  text-align: center;
+  line-height: 30px;
+}
+.app .section{
+  background: linear-gradient(90Deg, rgba(94, 86, 93, 0.947),rgb(110, 93, 110));
+  overflow: auto;
+  margin-top:30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+.app .section h1{
+  gap:5px;
+  font-style: oblique;
+  
+}
+.app .section .container{
+  background:linear-gradient(to right, rgb(152, 156, 244),rgb(249, 241, 241));
+  border-radius: 20px;
+  height: 400px;
+  width:700px;
+  margin-top: 20px;
+  color: rgb(13, 13, 14);
+
+}
+.app .section .inputdiv{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+}
+.app .section .inputdiv input{
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  height: 50px;
+  width: 400px;
+  font-size: larger;
+  padding-left: 10px;
+}
+.app .section .inputdiv button{
+  border: none;
+  background: dodgerblue;
+  color: white;
+  cursor: pointer;
+  height: 50px;
+  width: 90px;
+  border-radius: 10px;
+  font-size: larger;
+}
+.app .section .container .errMsg{
+  padding-left: 10px;
+  color: red;
+}
+.app .section .container .weatherinfo{
+  margin:0 1px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+}
+.app .section .container .weatherinfo img{
+  height: 100px;
+  margin:0 auto; 
+}
+.app .section .container .weatherinfo h3{
+  text-decoration: wavy;
+
+}
+.app .section .container .weatherinfo div p{
+  display: flex; 
+  justify-content: center;
+  text-align: center;
+  gap: 100px;
+  font-size:larger;
+}
+.app .progress{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 5, 5, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app .progress img{
+  height: 50px;
+}
